@@ -4,7 +4,7 @@
 ###     See included LICENSE file for details.
 ***************************************************************************/
 
-var currentVersion = '1.5.2';
+var currentVersion = '1.5.2_1';
 
 Package.describe({
   summary: "A persistent and reactive job queue for Meteor, supporting distributed workers that can run anywhere",
@@ -15,7 +15,7 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.use('mrt:later@1.6.1', ['server','client']);
-  api.use('coffeescript@1.12.6_1', ['server','client']);
+  api.use('coffeescript@1.0.4', ['server','client']);
   api.use('mongo@1.1.18', ['server','client']);
   api.use('check@1.2.5', ['server','client']);
   api.addFiles('job/src/job_class.coffee', ['server','client']);
